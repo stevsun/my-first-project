@@ -1,0 +1,21 @@
+pipeline{
+	Agent any
+
+	stages {
+	stage ('Build stage') {
+		steps {
+			sh '/Users/stevsun/my-first-project/testscript'
+		}
+	}
+	stage ('Test stage') {
+		steps {
+			sh '/Users/stevsun/my-first-project/testscript'
+		}
+	}
+	stage ('Deploy stage') {
+		steps {
+			sh '/Users/stevsun/my-first-project/testscript'
+		}
+	}
+	}
+}
